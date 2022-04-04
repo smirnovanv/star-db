@@ -1,3 +1,8 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import App from './components/app'
+
 class SwapiService {
   _apiBase = 'https://swapi.dev/api';
 
@@ -49,3 +54,7 @@ swapi.getAllPeople().then((people) => {
         console.log(p.name);
     });
 });
+
+
+
+ReactDOM.render(<App />, document.getElementById('root'));
